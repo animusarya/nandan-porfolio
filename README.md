@@ -1,9 +1,9 @@
-# Kickoff React
+# Kickoff Reactjs
 
 > An boilerplate for frontend apps using ReactJs with batteries included.
 
 
-[DEMO](http://kickoff-react.surge.sh/)
+[DEMO](https://kickoff-reactjs.netlify.com/)
 
 ## Requirements
 ```bash
@@ -21,7 +21,7 @@
 Close this repository locally by:
 
 ```sh
-git clone https://github.com/perminder-klair/kickoff-react.git app
+git clone https://github.com/perminder-klair/kickoff-reactjs.git app
 ```
 
 Start by installing dependencies:
@@ -40,7 +40,7 @@ yarn start
 
 ## Configuration
 
-Configuration file is located at `./utils/config.js`
+Configuration file is located at `.src//utils/config.js`
 
 ## Build
 
