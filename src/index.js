@@ -14,6 +14,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Cars from './pages/Cars';
+import Counter from './pages/Counter';
 
 const App = () => (
   <ApolloProvider client={apolloClient}>
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
           <Route path="/cars" component={Cars} />
+          <Route path="/counter" component={Counter} />
         </Layout>
       </Router>
     </ThemeProvider>
