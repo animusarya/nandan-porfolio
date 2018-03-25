@@ -13,24 +13,24 @@
     "apollo-link": "^1.2.1",
     "apollo-link-context": "^1.0.7",
     "apollo-link-state": "^0.4.1",
-    "graphql": "^0.13.0",
-    "graphql-tag": "^2.7.3",
+    "graphql": "^0.13.2",
+    "graphql-tag": "^2.8.0",
     "react": "^16.2.0",
-    "react-apollo": "^2.0.4",
+    "react-apollo": "^2.1.0",
     "react-dom": "^16.2.0",
     "react-helmet": "^5.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.1",
-    "styled-components": "^3.1.6"
+    "styled-components": "^3.2.3"
   },
   "devDependencies": {
-    "eslint": "^4.17.0",
+    "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-prettier": "^2.6.0",
-    "eslint-plugin-react": "^7.6.1",
-    "prettier-eslint-cli": "^4.7.0"
+    "eslint-plugin-react": "^7.7.0",
+    "prettier-eslint-cli": "^4.7.1"
   }
 }
