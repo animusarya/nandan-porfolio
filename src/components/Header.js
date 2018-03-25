@@ -12,5 +12,6 @@ export default () => (
     <Link className="navbar-item" to="/about">About</Link>
     <Link className="navbar-item" to="/contact">Contact</Link>
     <Link className="navbar-item" to="/cars">Cars</Link>
+    <Link className="navbar-item" to="/counter">Counter</Link>
   </nav>
 );
