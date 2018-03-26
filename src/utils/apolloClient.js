@@ -8,7 +8,7 @@ import config from './config';
 import apolloLocal from './apolloLocal';
 
 const httpLink = createHttpLink({
-  uri: config.graphQlUri,
+  uri: config.debug ? config.graphQlUriDev : config.graphQlUri,
 });
 
 const authLink = setContext((_, { headers }) => {

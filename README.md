@@ -13,7 +13,8 @@
 ## Stack
 ```bash
 - [React](http://facebook.github.io/react)
-- [create-react-app](https://github.com/facebook/create-react-app
+- [create-react-app](https://github.com/facebook/create-react-app)
+- [Apollo GraphQL](https://www.apollographql.com)
 ```
 
 ## Installation
@@ -49,13 +50,3 @@ To build for production
 ```sh
 yarn run build
 ```
-
-## Tests
-
-Running jest tests
-
-```sh
-yarn run test
-```
-
-To write tests follow: [http://facebook.github.io/jest/docs/api.html](http://facebook.github.io/jest/docs/api.html)

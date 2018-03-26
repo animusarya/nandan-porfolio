@@ -1,17 +1,24 @@
+/* eslint jsx-a11y/no-redundant-roles: 0 */
+
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
 import config from '../utils/config';
 
+const LinkStyled = styled(Link)`
+  color: ${props => props.theme.primary};
+`
+
 export default () => (
   <nav className="navbar is-transparent" role="navigation" aria-label="dropdown navigation">
-    <Link className="navbar-item" to="/">
+    <LinkStyled className="navbar-item" to="/">
       {config.siteName}
-    </Link>
-    <Link className="navbar-item" to="/">Home</Link>
-    <Link className="navbar-item" to="/about">About</Link>
-    <Link className="navbar-item" to="/contact">Contact</Link>
-    <Link className="navbar-item" to="/cars">Cars</Link>
-    <Link className="navbar-item" to="/counter">Counter</Link>
+    </LinkStyled>
+    <LinkStyled className="navbar-item" to="/">Home</LinkStyled>
+    <LinkStyled className="navbar-item" to="/about">About</LinkStyled>
+    <LinkStyled className="navbar-item" to="/contact">Contact</LinkStyled>
+    <LinkStyled className="navbar-item" to="/cars">Cars</LinkStyled>
+    <LinkStyled className="navbar-item" to="/counter">Counter</LinkStyled>
   </nav>
 );

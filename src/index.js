@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { ApolloProvider } from 'react-apollo';
 import { ThemeProvider } from 'styled-components';
 
-import './index.css';
 import theme from './utils/theme';
 import apolloClient from './utils/apolloClient';
 import registerServiceWorker from './utils/registerServiceWorker';
@@ -15,6 +14,25 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Cars from './pages/Cars';
 import Counter from './pages/Counter';
+
+// For private routes
+// const PrivateRoute = ({ component: Component, ...rest }) => (
+//   <Route
+//     {...rest}
+//     render={props =>
+//       localStorage.getItem('token') ? (
+//         <Component {...props} />
+//       ) : (
+//         <Redirect
+//           to={{
+//             pathname: "/login",
+//             state: { from: props.location }
+//           }}
+//         />
+//       )
+//     }
+//   />
+// );
 
 const App = () => (
   <ApolloProvider client={apolloClient}>
