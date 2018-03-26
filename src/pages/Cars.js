@@ -36,11 +36,22 @@ class Cars extends React.Component {
 
     return (
       <section className="section">
-        <Helmet title="About" />
+        <Helmet title="Cars" />
         <div className="container">
           <h1 className="title">
             Cars from Graph.cool
           </h1>
+          <ul>
+            <Query query={allCarsQuery}>
+              {({ loading, error, data }) => {
+              if (loading) return <p>Loading...</p>;
+              if (error) return <p>Error :(</p>;
+
+              return data.allCars.map(car => <li key={car.id}>{car.title}</li>)
+            }}
+            </Query>
+          </ul>
+          <br />
           <Mutation
             mutation={createCarMutation}
             variables={{ title: 'bmw' }}
@@ -58,16 +69,6 @@ class Cars extends React.Component {
               </div>
             )}
           </Mutation>
-          <ul>
-            <Query query={allCarsQuery}>
-              {({ loading, error, data }) => {
-              if (loading) return <p>Loading...</p>;
-              if (error) return <p>Error :(</p>;
-
-              return data.allCars.map(car => <li key={car.id}>{car.title}</li>)
-            }}
-            </Query>
-          </ul>
         </div>
       </section>
     );

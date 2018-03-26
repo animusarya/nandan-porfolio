@@ -4,11 +4,11 @@ import { injectGlobal } from 'styled-components';
 
 // http://chir.ag/projects/name-that-color/
 export const colors = {
-	pumpkin: '#ff781a',
+	caribbeanGreen: '#00D1B2',
 };
 
 export default {
-	primary: colors.pumpkin,
+	primary: colors.caribbeanGreen,
 };
 
 injectGlobal`

@@ -11,27 +11,35 @@ const counterQuery = gql`
   }
 `;
 
-const Counter = () => (
-  <section className="section">
-    <Helmet title="Home" />
-    <div className="container">
-      <h1 className="title">Counter</h1>
-      <Query query={counterQuery}>
-        {({ data, client }) => (
-          <div>
-            <p>
-              {data && data.counter && `🐑 Counter: ${data.counter.value}`}
-            </p>
-            <button
-              onClick={() => client.writeData({ data: { counter: {__typename: "Counter", value: data.counter.value+1 } } })}
-            >
-               Increment
-            </button>
-          </div>
-          )}
-      </Query>
-    </div>
-  </section>
-);
+const Counter = () => {
+  const handleIncrement = (data, client) => {
+    client.writeData({
+      data: {
+        counter: {__typename: "Counter", value: data.counter.value+1 }
+      }
+    })
+  }
+
+  return (
+    <section className="section">
+      <Helmet title="Counter" />
+      <div className="container">
+        <h1 className="title">Counter - Local Update</h1>
+        <Query query={counterQuery}>
+          {({ data, client }) => (
+            <div>
+              <p>
+                {data && data.counter && `🐑 Counter: ${data.counter.value}`}
+              </p>
+              <button onClick={() => handleIncrement(data, client)}>
+                 Increment
+              </button>
+            </div>
+            )}
+        </Query>
+      </div>
+    </section>
+  );
+}
 
 export default Counter;
