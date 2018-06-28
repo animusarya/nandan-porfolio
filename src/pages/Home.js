@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const Body = styled.div`
   width: 100%;
   background-color: #5031a9;
-  height:3200px;
+  height:4200px;
 `;
 
 const Creative = styled.h1`
@@ -114,7 +114,7 @@ const Web = styled.div`
 
 const Apple = styled.img`
   width:100%;
-  height:644px;
+  height:948px;
 `;
 
 const Secondpart = styled.div`
@@ -139,7 +139,7 @@ const Art = styled.div`
   height: 76px;
   background-color: #cf393aa3;
   margin-top: -82px;
-  position: absolute;<div />
+  position: absolute;
   line-height: 22px;
   font-family: sans-serif;
 `;
@@ -148,7 +148,8 @@ const Thirdpart = styled.div`
   margin-left: 137px !important;
   width: 82%;
   background-color: #ffffff;
-  height: 644px;
+  height: 948px;
+  margin-top: 304px;
 `;
 
 const DesignerLogo = styled.img`
@@ -189,6 +190,56 @@ const DotIcone = styled.h1`
 const GernalDesign = styled.h1`
   margin: 0px 109px 0px;
   padding-top: 25px;
+`;
+
+const DesignProudact = styled.h1`
+  margin-left: 95px;
+  margin-top: 30px;
+`; 
+
+const  Proudact = styled.a`
+  margin-left: 15px;
+  border: hidden;
+  background-color: #f5f5f5;
+  font-size: 13px;
+  font-weight: 400;
+  color:#bdbdbc!important;
+`;
+
+const Digitaldesign = styled.p`
+  margin-top:47px;
+  margin-left:114px;
+  color: #8d8d8d;
+  font-family: sans-serif;
+`;
+
+const ButtonFull = styled.a`
+  margin-left: 116px;
+  margin-top: 60px;
+  background-color: #f14b59!important;
+  font-size: 15px;
+  width: 153px;
+  height: 47px;
+  font-weight: 1000!important;
+  color: #ffffff!important;
+  font-family: 'Roboto', sans-serif;
+`;
+
+const Fourthpart = styled.div`
+  width:1208px;
+  height:744px;
+  background-color:red;
+  margin-left:137px;
+`;
+const DesignerWorak = styled.nav`
+width: 366px;
+margin-left: 103px;
+margin-top: 69px;
+`;
+
+const TableHead = styled.th`
+  color: #f6663e;
+  font-size: 48px;
 `;
 export default () => (
   <Body>
@@ -274,8 +325,118 @@ export default () => (
           <GernalDesign className="has-text-weight-semibold has-text-black is-size-2">2017 Gernal<br />
               Designed Trends
           </GernalDesign>
+          <DesignProudact>
+            <Proudact className="button is-hovered">Design</Proudact>  
+            <Proudact className="button is-hovered">UX</Proudact>  
+            <Proudact className="button is-hovered">Proudact design</Proudact>
+          </DesignProudact>
+          <Digitaldesign> Digital design always solves a problem,otherwise<br />
+            it would be pixel art, understanding the problem,<br />
+            throughly is essential to design successful solutions<br />
+            Thoroighly research the problem before coming<br />
+            up with suitable solutions.<br /><br /><br /><br />
+            Creative fewer features,but make them great<br />
+            instead of just good.
+          </Digitaldesign>
+          <ButtonFull className="button is-hovered has-text-weight-bold">FULL ARTICLE</ButtonFull>
         </div>
       </div>
     </Thirdpart>
+    <Fourthpart>
+      <div className="columns is-gapless">
+        <div className="column">
+          <DesignerWorak className="level">
+            <div className="level-left" >
+              <table>
+                <thead>
+                  <tr>
+                    <TableHead className="has-text-danger is-size-1">Agency</TableHead>
+                  </tr>
+                </thead>
+                <tbody  className="has-text-centered	has-text-white has-text-weight-semibold">
+                  <tr>
+                    <td>our Team</td>
+                  </tr>
+                  <tr>
+                    <td>Awards</td>
+                  </tr>
+                  <tr>
+                    <td>Stories</td>
+                  </tr>
+                  <tr>
+                    <td>Leadership</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="level-right" >
+              <table>
+                <thead>
+                  <tr>
+                    <th className="has-text-danger is-size-1">Work</th>
+                  </tr>
+                </thead>
+                <tbody   className="has-text-centered	has-text-white has-text-weight-semibold">
+                  <tr>
+                    <td>Branding</td>
+                  </tr>
+                  <tr>
+                    <td>illustration</td>
+                  </tr>
+                  <tr>
+                    <td>Digital</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </DesignerWorak>
+          <DesignerWorak className="level">
+            <div className="level-left" >
+              <table>
+                <thead>
+                  <tr>
+                    <TableHead className="has-text-danger is-size-1">Services</TableHead>
+                  </tr>
+                </thead>
+                <tbody  className="has-text-centered	has-text-white has-text-weight-semibold">
+                  <tr>
+                    <td>Design</td>
+                  </tr>
+                  <tr>
+                    <td>Startegy</td>
+                  </tr>
+                  <tr>
+                    <td>Contant</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="level-right" >
+              <table>
+                <thead>
+                  <tr>
+                    <th className="has-text-danger is-size-1">Contact</th>
+                  </tr>
+                </thead>
+                <tbody  className="has-text-centered	has-text-white has-text-weight-semibold">
+                  <tr>
+                    <td>Become A Client</td>
+                  </tr>
+                  <tr>
+                    <td>Find Us</td>
+                  </tr>
+                  <tr>
+                    <td>Careers</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </DesignerWorak>
+        </div>
+        <div className="column">
+            no gap
+        </div>
+      </div>
+    </Fourthpart>
   </Body>
 );
