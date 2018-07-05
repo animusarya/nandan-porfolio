@@ -11,8 +11,8 @@ const  Design  = styled.div`
 `;
 
 const Illustration = styled.img`
-  width: 100%;
   height: 100%;
+  width: 100%;
 `;
 
 const Geometry = styled.div`

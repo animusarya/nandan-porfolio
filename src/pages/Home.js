@@ -116,9 +116,7 @@ const Input = styled.input`
     color: #afafaf;
   }
 }
-
 `;
-
 export default () => (
   <Body>
     <Helmet />
