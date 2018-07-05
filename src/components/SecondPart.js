@@ -55,7 +55,7 @@ const Bix = styled.div`
   width: 302px;
   height: 76px;
   background-color: #1f3db38a!important;
-  margin-top: -83px;
+  margin-top: -82px;
   position: absolute;
   line-height: 22px;
   font-family: sans-serif;
@@ -65,7 +65,7 @@ const WebDesign = styled.div`
   width: 302px;
   height: 76px;
   background-color: #474342ad!important
-  margin-top: -83px;
+  margin-top: -82px;
   position: absolute;
   line-height: 22px;
   font-family: sans-serif;

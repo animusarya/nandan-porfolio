@@ -35,14 +35,14 @@ const DesignerName = styled.h1`
   color:#ababaa;
 `;
 
-const DesignerDob = styled.h1`
+const DesignerDob = styled.h4`
   font-size: 10px;
   margin-top: 122px;
   margin-left: 104px;
   color:#ababaa;
 `; 
 
-const DotIcone = styled.h1`
+const DotIcone = styled.h3`
   font-size: 4px;
   margin-bottom: 3px!important;
   color:#ababaa;
@@ -54,7 +54,7 @@ const GernalDesign = styled.h1`
   padding-top: 25px;
 `;
 
-const DesignProudact = styled.h1`
+const DesignProudact = styled.h2`
   margin-left: 95px;
   margin-top: 30px;
 `; 
@@ -68,7 +68,7 @@ const  Proudact = styled.a`
   color:#bdbdbc!important;
 `;
 
-const Digitaldesign = styled.p`
+const DigitalDesign = styled.p`
   margin-top:47px;
   margin-left:114px;
   color: #8d8d8d;
@@ -108,14 +108,14 @@ export default () => (
           <Proudact className="button is-hovered">UX</Proudact>  
           <Proudact className="button is-hovered">Proudact design</Proudact>
         </DesignProudact>
-        <Digitaldesign>Digital design always solves a problem,otherwise<br />
+        <DigitalDesign>Digital design always solves a problem,otherwise<br />
               it would be pixel art, understanding the problem,<br />
               throughly is essential to design successful solutions<br />
               Thoroighly research the problem before coming<br />
               up with suitable solutions.<br /><br /><br /><br />
               Crative fewer features,but make them great<br />
               instead of just good.
-        </Digitaldesign>
+        </DigitalDesign>
         <ButtonFull className="button is-hovered has-text-weight-bold">FULL ARTICLE</ButtonFull>
       </div>
     </div>

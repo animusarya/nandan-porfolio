@@ -99,7 +99,7 @@ const IconTwitter = styled.i`
   margin-left:132px;
 `;
 
-const HBK =styled.h1`
+const HBK = styled.h2`
   color:#fac501!important;
 `;
 

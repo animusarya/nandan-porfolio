@@ -7,7 +7,7 @@ const Firstpart = styled.div`
   padding-top: 105px;
 `;
 
-const Creative = styled.h1`
+const Creative = styled.h2`
   font-family: sans-serif;
   width: 457px;
   font-size: 20px;
