@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const Nav = styled.div`
   width: 100%;
   background-color: #4c2ea1;
-  color: #fffeff !important;
+  color: #fffeff ;
   font-size :15px;
   font-weight:600;
   height: 86px;
@@ -16,35 +16,39 @@ const Navbar = styled.div`
   padding-top: 23px;
   margin-left: 221px;
   height: 35px;
-
-`;
+  a:hover { 
+    background-color: #4f31a8;
+    color: #fff!important;
+}`;
 
 const Logo = styled.a`
   margin-right:351px;
   width: 101px;
   height: 87px;
+  background-color:#f14b59 !important;
+  border-radius: 0px;
 `;
 
 const  Menu  =  styled.a`
   width: 124px;
   height: 31px;
-  margin-left: 16px;
+  margin-left: 8px;
+  padding-left: 38px;
 `;
 
-const Icone = styled.i`
+const Icons = styled.i`
   width: 5px !important;
   color: #6d45e1;
-  margin-left: 32px;
+  margin-Top: 7px;
+  margin-left: 6px;
 `;
-
-
 
 export default () => ( 
   <Nav className="navbar-menu">
     <Navbar className="navbar-start has-text-white">
-      <Menu className="navbar-item has-text-white">HOME <Icone className="fas fa-circle" /></Menu>
-      <Menu className="navbar-item has-text-white">WORK <Icone className="fas fa-circle" /></Menu>
-      <Menu className="navbar-item has-text-white">SERVICES <Icone className="fas fa-circle" /></Menu>
+      <Menu className="navbar-item has-text-white">HOME </Menu><Icons className="fas fa-square" />
+      <Menu className="navbar-item has-text-white">WORK </Menu><Icons className="fas fa-square" />
+      <Menu className="navbar-item has-text-white">SERVICES </Menu>&nbsp;&nbsp;<Icons className="fas fa-square" />
       <Menu className="navbar-item has-text-white">CONTACT</Menu>
     </Navbar>
     <div className="navbar-end">
