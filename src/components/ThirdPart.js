@@ -10,15 +10,15 @@ const Thirdpart = styled.div`
 `;
 
 const Apple = styled.img`
-  width:100%;
-  height:948px;
+  width: 100%;
+  height: 948px;
 `;
 
 const DesignerLogo = styled.img`
   margin-left: 13px !important;
   width: 100px;
   height: 85px;
-  float:left;
+  float: left;
   margin-top: -3px;
 `;
 
@@ -31,21 +31,21 @@ const DesignerInfobox = styled.div`
 `;
 const DesignerName = styled.h1`
   font-family: serif;
-  margin-top:14px;
-  color:#ababaa;
+  margin-top: 14px;
+  color: #ababaa;
 `;
 
 const DesignerDob = styled.h4`
   font-size: 10px;
   margin-top: 122px;
   margin-left: 104px;
-  color:#ababaa;
+  color: #ababaa;
 `; 
 
 const DotIcone = styled.h3`
   font-size: 4px;
   margin-bottom: 3px!important;
-  color:#ababaa;
+  color: #ababaa;
 }
 `;
 
@@ -68,9 +68,9 @@ const  Proudact = styled.a`
   color:#bdbdbc!important;
 `;
 
-const DigitalDesign = styled.p`
-  margin-top:47px;
-  margin-left:114px;
+const Para1 = styled.p`
+  margin-top: 47px;
+  margin-left: 114px;
   color: #8d8d8d;
   font-family: sans-serif;
 `;
@@ -88,7 +88,7 @@ const ButtonFull = styled.a`
 `;
 
 export default () => (
-  <Thirdpart>
+  <Thirdpart id="Thirdpart">
     <div className="columns is-gapless">
       <div className="column">
         <Apple src="images/leftsideimage.png" />
@@ -96,7 +96,7 @@ export default () => (
       <div className="column">
         <DesignerInfobox>
           <DesignerLogo src="images/nlogo.jpg" />
-          <DesignerName className="is-size-5 has-text-black  ">Nandan designer</DesignerName>
+          <DesignerName className="is-size-5 has-text-black">Nandan designer</DesignerName>
           <h2 className="has-text-link">Graphic designer</h2>
         </DesignerInfobox>
         <DesignerDob  className="has-text-weight-semibold">&nbsp;&nbsp;JAN 5, 2016&nbsp;&nbsp;&nbsp; &nbsp;<DotIcone className="fas fa-circle"  />&nbsp;&nbsp;&nbsp;&nbsp;3 MIN READ</DesignerDob>
@@ -108,14 +108,15 @@ export default () => (
           <Proudact className="button is-hovered">UX</Proudact>  
           <Proudact className="button is-hovered">Proudact design</Proudact>
         </DesignProudact>
-        <DigitalDesign>Digital design always solves a problem,otherwise<br />
-              it would be pixel art, understanding the problem,<br />
-              throughly is essential to design successful solutions<br />
-              Thoroighly research the problem before coming<br />
-              up with suitable solutions.<br /><br /><br /><br />
-              Crative fewer features,but make them great<br />
-              instead of just good.
-        </DigitalDesign>
+        <Para1>
+          Digital design always solves a problem,otherwise<br />
+          it would be pixel art, understanding the problem,<br />
+          throughly is essential to design successful solutions<br />
+          Thoroighly research the problem before coming<br />
+          up with suitable solutions.<br /><br /><br /><br />
+          Crative fewer features,but make them great<br />
+          instead of just good.
+        </Para1>
         <ButtonFull className="button is-hovered has-text-weight-bold">FULL ARTICLE</ButtonFull>
       </div>
     </div>

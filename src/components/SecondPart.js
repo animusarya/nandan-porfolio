@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
 const  Design  = styled.div`
   margin-left: 137px !important;
   width: 82%;
@@ -26,25 +25,26 @@ const Geometry = styled.div`
 `;
 
 const Tittle = styled.h1`
-  margin-top:18px;  
+  margin-top: 18px;  
   margin-left: 4px;
-  font-weight: 551!important
+  font-weight: 551!important;
+  color: #69dde7;
 `;
 
 const Branding = styled.img`
   width: 100%;
-  height:350px;
+  height: 350px;
 `;
 
 const Card = styled.img`
   width: 100%;
-  height:288px;
+  height: 288px;
 `;
 
 const Beyond = styled.div`
   width: 41%;
   height: 76px;
-  background-color:#1b6e4ecc !important;
+  background-color: #1b6e4ecc !important;
   margin-top: -76px;
   position: absolute;
   line-height: 22px;
@@ -72,15 +72,15 @@ const WebDesign = styled.div`
 `;
 
 const Apple = styled.img`
-  width:100%;
-  height:948px;
+  width: 100%;
+  height: 948px;
 `;
 
 const SecondPart = styled.div`
   margin-left: 137px !important;
   width: 82%;
   height: 644px;
-  margin-top: -24px!important;
+  margin-top: -24px !important;
 `;
 
 const Ios = styled.div`
@@ -104,7 +104,7 @@ const Art = styled.div`
 `;
 
 export default () => (
-  <div>
+  <div id="secondpart">
     <Design className="columns is-gapless">
       <div className="column">
         <Illustration src="images/fast.jpeg" />
@@ -130,8 +130,8 @@ export default () => (
           <div className="column">
             <Card src="images/web-design.jpg" />
             <WebDesign>
-              <Tittle className="is-size-6 has-text-warning">&nbsp;&nbsp;&nbsp;web design</Tittle>
-              <h1 className="is-size-5 has-text-white has-text-weight-semibold">&nbsp;&nbsp;&nbsp;SANS AGENCY</h1>
+              <Tittle className="is-size-6">&nbsp;&nbsp;&nbsp;web design</Tittle>
+              <h1 className="is-size-5 has-text-white has-text-weight-bold">&nbsp;&nbsp;&nbsp;SANS AGENCY</h1>
             </WebDesign>
           </div>
         </div>
@@ -143,7 +143,7 @@ export default () => (
           <Apple src="images/ios.jpg" />
           <Ios>
             <Tittle className="is-size-6 has-text-warning">&nbsp;&nbsp;&nbsp;iOS Design</Tittle>
-            <h1 className="is-size-5 has-text-white has-text-weight-semibold">&nbsp;&nbsp;&nbsp;BP&XO CONSULTING</h1>
+            <h1 className="is-size-5 has-text-white has-text-weight-bold">&nbsp;&nbsp;&nbsp;BP&XO CONSULTING</h1>
           </Ios>
         </div>
         <div className="column">

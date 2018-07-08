@@ -27,7 +27,7 @@ const Box = styled.div`
   margin-left: 24px;
   padding-top: 108px;
 `;
-const SquareIcone = styled.i`
+const SquareIcon = styled.i`
   color: #f14a5a;
   height: 10px;
 `;
@@ -38,7 +38,7 @@ const Icons = styled.i`
 `;
 
 export default () => (
-  <Firstpart>
+  <Firstpart id="firstpart">
     <strong className="has-text-warning has-text-weight-bold is-size-3 is-pulled-left"> &nbsp; HBK</strong>
     <Creative className="has-text-white has-text-left">  
   &nbsp;  - &nbsp; Creative a agency for forward <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; thinking brands.
@@ -49,7 +49,7 @@ export default () => (
       </Heading>
     </div>
     <Box>
-      <SquareIcone className="fas fa-square" />&nbsp;&nbsp;&nbsp;&nbsp;
+      <SquareIcon className="fas fa-square" />&nbsp;&nbsp;&nbsp;&nbsp;
       <Icons className="fas fa-square" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <Icons className="fas fa-square" />&nbsp; &nbsp;
     </Box>

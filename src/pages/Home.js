@@ -9,18 +9,20 @@ import ThirdPart from '../components/ThirdPart';
 const Body = styled.div`
   width: 100%;
   background-color: #5031a9;
-  height:3857px;
+  height: 3857px;
 `;
+
 const Fourthpart = styled.div`
-  width:1208px;
-  height:524px;
-  margin-left:137px;
+  width: 1208px;
+  height: 524px;
+  margin-left: 137px;
 `;
-const DesignerWorak = styled.nav`
+
+const DesignerWork = styled.nav`
   width: 366px;
   margin-left: 103px;
   margin-top: 69px;
-  font-weight:600;
+  font-weight: 600;
   line-height: 29px;
 `;
 
@@ -31,7 +33,7 @@ const TableHead = styled.th`
 `;
 
 const TableBody = styled.tbody`
-  font-weight:600px !important;
+  font-weight: 600px !important;
 `; 
 
 const LevelRight = styled.div`
@@ -39,7 +41,7 @@ const LevelRight = styled.div`
 `;
 
 const TableheadServices = styled.th`
-  color:#bdeb47;
+  color: #bdeb47;
   font-size: 48px;
   padding-bottom: 22px;
 `;
@@ -57,18 +59,18 @@ const SubscribeButton = styled.a`
   background-color: #f14b59 !important;
 `;
 
-const SubscriptionForm = styled.div`
-  padding-top:29px;
+const SubscribtionForm = styled.div`
+  padding-top: 29px;
 `;
 
-const DesignerMarket = styled.div`
-  padding-bottom:22px;
+const DesignerMarketing = styled.div`
+  padding-bottom: 22px;
 `;
 
 const Footer = styled.div`
   width: 100%;
-  background-color:#4c2ea1;
-  height:117px;
+  background-color: #4c2ea1;
+  height: 117px;
 `;
 
 const LeftFooter = styled.div`
@@ -85,22 +87,22 @@ const RightFooter = styled.div`
 `;
 
 const Brands = styled.h1`
-  padding-top:7px
+  padding-top: 7px
 `;
 
 const Icon = styled.i`
-  color:#fac507;
+  color: #fac507;
   margin-top: 14px;
 `;
 
 const IconTwitter = styled.i`
-  color:#fac507;
+  color: #fac507;
   margin-top: 14px;
-  margin-left:132px;
+  margin-left: 132px;
 `;
 
-const HBK = styled.h2`
-  color:#fac501!important;
+const Hbk = styled.h2`
+  color: #fac501!important;
 `;
 
 const Input = styled.input`
@@ -123,10 +125,10 @@ export default () => (
     <FirstPart />
     <SecondPart />
     <ThirdPart />
-    <Fourthpart>
+    <Fourthpart id="home">
       <div className="columns is-gapless">
         <div className="column">
-          <DesignerWorak className="level">
+          <DesignerWork className="level">
             <div className="level-left" >
               <table>
                 <thead>
@@ -134,7 +136,7 @@ export default () => (
                     <TableHead className="is-size-1">Agency</TableHead>
                   </tr>
                 </thead>
-                <TableBody  className="has-text-centered	has-text-white">
+                <TableBody className="has-text-centered has-text-white">
                   <tr>
                     <td>our Team</td>
                   </tr>
@@ -150,14 +152,14 @@ export default () => (
                 </TableBody>
               </table>
             </div>
-            <DesignerMarket className="level-right" >
+            <DesignerMarketing className="level-right">
               <table>
                 <th>
                   <tr>
                     <TableHead className="has-text-warning is-size-1">Work</TableHead>
                   </tr>
                 </th>
-                <TableBody   className="has-text-centered	has-text-white">
+                <TableBody className="Skiphas-text-centered	has-text-white">
                   <tr>
                     <td>Branding</td>
                   </tr>
@@ -169,9 +171,9 @@ export default () => (
                   </tr>
                 </TableBody>
               </table>
-            </DesignerMarket>
-          </DesignerWorak>
-          <DesignerWorak className="level">
+            </DesignerMarketing>
+          </DesignerWork>
+          <DesignerWork className="level">
             <div className="level-left" >
               <table>
                 <thead>
@@ -199,7 +201,7 @@ export default () => (
                     <TableHead className="has-text-info is-size-1">Contact</TableHead>
                   </tr>
                 </thead>
-                <TableBody  className="has-text-centered	has-text-white">
+                <TableBody className="has-text-centered	has-text-white">
                   <tr>
                     <td>Become A Client</td>
                   </tr>
@@ -212,7 +214,7 @@ export default () => (
                 </TableBody>
               </table>
             </LevelRight>
-          </DesignerWorak>
+          </DesignerWork>
         </div>
         <div className="column">
           <Subscription>
@@ -220,14 +222,14 @@ export default () => (
                 to deliver results<br />
                 for business
             </h1>
-            <SubscriptionForm className="field">
+            <SubscribtionForm className="field">
               <p className="control has-icons-left has-icons-right">
                 <Input className="input" type="email" placeholder="NAME" />
                 <span className="icon is-small is-left">
                   <i className="fas fa-user" />
                 </span>
               </p>
-            </SubscriptionForm>
+            </SubscribtionForm>
             <div className="field">
               <p className="control has-icons-left has-icons-right">
                 <Input className="input" type="email" placeholder="Email" />
@@ -243,17 +245,17 @@ export default () => (
     </Fourthpart>
     <Footer>
       <LeftFooter className="is-pulled-left">
-        <HBK className="has-text-weight-bold is-size-3 is-pulled-left">&nbsp; HBK&nbsp; </HBK>
+        <Hbk className="has-text-weight-bold is-size-3 is-pulled-left">&nbsp; HBK&nbsp; </Hbk>
         <Brands className="has-text-white has-text-left is-size-5 has-text-weight-normal">  
-        &nbsp;&nbsp;&nbsp;-&nbsp;creative a agency for forward <br /> &nbsp;&nbsp;&nbsp;&nbsp; thinking brands.
+           &nbsp;&nbsp;&nbsp;-&nbsp;creative a agency for forward <br /> &nbsp;&nbsp;&nbsp;&nbsp; thinking brands.
         </Brands>
       </LeftFooter>
       <RightFooter className="is-pulled-right">
         <h1 className="has-text-white is-size-6 has-text-weight-normal">@ 2017 HBK. All right Reserved.</h1>
-        <IconTwitter className="fab fa-twitter" />&nbsp;&nbsp;&nbsp;
-        <Icon className="fab fa-facebook-square" />&nbsp;&nbsp;&nbsp;
-        <Icon className="fab fa-linkedin-in" />&nbsp;&nbsp;&nbsp;
-        <Icon className="fab fa-pinterest-p" />&nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com/Souravarya4u"><IconTwitter className="fab fa-twitter" /></a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.facebook.com/mirza.mahi.90"><Icon className="fab fa-facebook-square" /></a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/sourav-arya-84b93415b/"><Icon className="fab fa-linkedin-in" /></a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.facebook.com/mirza.mahi.90"><Icon className="fab fa-pinterest-p" /></a>&nbsp;&nbsp;&nbsp;
       </RightFooter>
     </Footer>
   </Body>
