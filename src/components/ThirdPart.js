@@ -4,14 +4,35 @@ import styled from 'styled-components';
 const Thirdpart = styled.div`
   margin-left: 137px !important;
   width: 82%;
-  background-color: #ffffff;
   height: 948px;
   margin-top: 304px;
+`;
+
+const RightCol = styled.div`
+  width:100%;
+  background-color:#fff;
+  height: 948px;
+  margin-top: 304px;
+  @media screen and (max-width: 800px) {
+    {
+      margin-left: -105px !important;
+      margin-top: -9px !important;
+      height: 829px;
+    }
+  }
 `;
 
 const Apple = styled.img`
   width: 100%;
   height: 948px;
+  @media screen and (max-width: 800px) {
+    {
+      width: 100%;
+      height: 639px;
+      margin-left: -105px;
+      margin-top: 1305px;
+    }
+  }
 `;
 
 const DesignerLogo = styled.img`
@@ -20,6 +41,15 @@ const DesignerLogo = styled.img`
   height: 85px;
   float: left;
   margin-top: -3px;
+  @media screen and (max-width: 800px) {
+    {
+      margin-left: -61px !important;
+      width: 100px;
+      height: 85px;
+      float: left;
+      margin-top: -3px;
+    }
+  }
 `;
 
 const DesignerInfobox = styled.div`
@@ -28,6 +58,11 @@ const DesignerInfobox = styled.div`
   margin-left: 81px;
   padding-top: 86px;
   font-family: serif;
+  @media screen and (max-width: 800px) {
+    {
+      padding-top: 11px;
+    }
+  }
 `;
 const DesignerName = styled.h1`
   font-family: serif;
@@ -40,6 +75,14 @@ const DesignerDob = styled.h4`
   margin-top: 122px;
   margin-left: 104px;
   color: #ababaa;
+  @media screen and (max-width: 800px) {
+    {
+      font-size: 10px;
+      margin-top: 0px;
+      margin-left: 114px;
+      color: #ababaa;
+    }
+  }
 `; 
 
 const DotIcone = styled.h3`
@@ -57,6 +100,11 @@ const GernalDesign = styled.h1`
 const DesignProudact = styled.h2`
   margin-left: 95px;
   margin-top: 30px;
+  @media screen and (max-width: 800px) {
+    {
+      margin-left: 5px;
+    }
+  }
 `; 
 
 const  Proudact = styled.a`
@@ -73,6 +121,11 @@ const Para1 = styled.p`
   margin-left: 114px;
   color: #8d8d8d;
   font-family: sans-serif;
+  @media screen and (max-width: 800px) {
+    {
+      margin-left: 27px;
+    }
+  }
 `;
 
 const ButtonFull = styled.a`
@@ -85,6 +138,11 @@ const ButtonFull = styled.a`
   font-weight: 1000!important;
   color: #ffffff!important;
   font-family: 'Roboto', sans-serif;
+  @media screen and (max-width: 800px) {
+    {
+      margin-left: 27px;
+    }
+  }
 `;
 
 export default () => (
@@ -93,14 +151,14 @@ export default () => (
       <div className="column">
         <Apple src="images/leftsideimage.png" />
       </div>
-      <div className="column">
+      <RightCol className="column">
         <DesignerInfobox>
           <DesignerLogo src="images/nlogo.jpg" />
           <DesignerName className="is-size-5 has-text-black">Nandan designer</DesignerName>
           <h2 className="has-text-link">Graphic designer</h2>
         </DesignerInfobox>
         <DesignerDob  className="has-text-weight-semibold">&nbsp;&nbsp;JAN 5, 2016&nbsp;&nbsp;&nbsp; &nbsp;<DotIcone className="fas fa-circle"  />&nbsp;&nbsp;&nbsp;&nbsp;3 MIN READ</DesignerDob>
-        <GernalDesign className="has-text-weight-semibold has-text-black is-size-2">2017 Gernal<br />
+        <GernalDesign className="has-text-weight-semibold has-text-black is-size-2 is-size-4-mobile">2017 Gernal<br />
           Designed Trends
         </GernalDesign>
         <DesignProudact>
@@ -108,17 +166,17 @@ export default () => (
           <Proudact className="button is-hovered">UX</Proudact>  
           <Proudact className="button is-hovered">Proudact design</Proudact>
         </DesignProudact>
-        <Para1>
-          Digital design always solves a problem,otherwise<br />
-          it would be pixel art, understanding the problem,<br />
-          throughly is essential to design successful solutions<br />
-          Thoroighly research the problem before coming<br />
-          up with suitable solutions.<br /><br /><br /><br />
-          Crative fewer features,but make them great<br />
+        <Para1 className="has-text-left">
+          Digital design always solves a problem,otherwise
+          it would be pixel art, understanding the problem,
+          throughly is essential to design successful solutions
+          Thoroighly research the problem before coming
+          up with suitable solutions.<br /><br /><br />
+          Crative fewer features,but make them <br />
           instead of just good.
         </Para1>
         <ButtonFull className="button is-hovered has-text-weight-bold">FULL ARTICLE</ButtonFull>
-      </div>
+      </RightCol>
     </div>
   </Thirdpart>
 );

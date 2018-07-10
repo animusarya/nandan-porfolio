@@ -4,7 +4,6 @@ import styled from 'styled-components';
 const  Design  = styled.div`
   margin-left: 137px !important;
   width: 82%;
-  background-color: red;
   height: 644px;
   margin-top: 145px!important;
 `;
@@ -12,6 +11,14 @@ const  Design  = styled.div`
 const Illustration = styled.img`
   height: 100%;
   width: 100%;
+  @media screen and (max-width: 800px) {
+    {
+      height: 193%;
+      width: 100%;
+      margin-left: -107px;
+      margin-top: -65px;
+    }
+  }
 `;
 
 const Geometry = styled.div`
@@ -22,6 +29,12 @@ const Geometry = styled.div`
   position: absolute;
   line-height: 22px;
   font-family: sans-serif;
+  @media screen and (max-width: 800px) {
+    {
+      margin-left: -106px;
+      width: 82%;
+    }
+  }
 `;
 
 const Tittle = styled.h1`
@@ -34,11 +47,28 @@ const Tittle = styled.h1`
 const Branding = styled.img`
   width: 100%;
   height: 350px;
+  @media screen and (max-width: 800px) {
+    {
+      width: 100%;
+      height: 484px;
+      margin-left: -107px;
+      margin-top: -8px;
+      float: left;
+    }
+  }
 `;
 
 const Card = styled.img`
   width: 100%;
   height: 288px;
+  @media screen and (max-width: 800px) {
+    {
+      width: 100%;
+      height: 432px;
+      margin-left:-107px;
+      margin-top: -6px;  
+    }
+  }
 `;
 
 const Beyond = styled.div`
@@ -49,16 +79,29 @@ const Beyond = styled.div`
   position: absolute;
   line-height: 22px;
   font-family: sans-serif;
+@media screen and (max-width: 800px) {
+    {
+      margin-top: 395px;
+      margin-left: -110px;
+      width: 83%;
+    }
+  }
 `;
 
 const Bix = styled.div`
-  width: 302px;
+  width: 378px;
   height: 76px;
   background-color: #1f3db38a!important;
   margin-top: -82px;
   position: absolute;
   line-height: 22px;
   font-family: sans-serif;
+  @media screen and (max-width: 800px) {
+    { 
+      margin-left: -108px;
+      width: 82%;  
+    }
+  }
 `;
 
 const WebDesign = styled.div`
@@ -69,13 +112,39 @@ const WebDesign = styled.div`
   position: absolute;
   line-height: 22px;
   font-family: sans-serif;
+  @media screen and (max-width: 800px) {
+    {
+      margin-left: -107px;
+      width: 82%;
+    }
+  }
 `;
 
 const Apple = styled.img`
   width: 100%;
   height: 948px;
+  @media screen and (max-width: 800px) {
+    {
+      width: 100%;
+      height: 506px;
+      margin-left: -106px;
+      margin-top: 859px!important;
+    }
+  }
 `;
 
+const Boy = styled.img`
+  width: 100%;
+  height: 948px;
+  @media screen and (max-width: 800px) {
+    {
+    width: 100%;
+    height: 721px;
+    margin-left: -106px;
+    margin-top: -7px;
+    }
+  }
+`;
 const SecondPart = styled.div`
   margin-left: 137px !important;
   width: 82%;
@@ -91,6 +160,13 @@ const Ios = styled.div`
   position: absolute;
   line-height: 22px;
   font-family: sans-serif;
+  @media screen and (max-width: 800px) {
+    {
+      width: 82%;
+      margin-left: -106px;
+      margin-top: -82px;
+    }  
+  }
 `;
 
 const Art = styled.div`
@@ -101,6 +177,13 @@ const Art = styled.div`
   position: absolute;
   line-height: 22px;
   font-family: sans-serif;
+@media screen and (max-width: 800px) {
+    {
+      width: 82%;
+      margin-left: -106px;
+      margin-top: -130px;
+    }  
+  }
 `;
 
 export default () => (
@@ -147,7 +230,7 @@ export default () => (
           </Ios>
         </div>
         <div className="column">
-          <Apple src="images/dwring.jpg" />
+          <Boy src="images/dwring.jpg" />
           <Art>
             <Tittle className="is-size-6 has-text-warning">&nbsp;&nbsp;&nbsp;Art Book</Tittle>
             <h1 className="is-size-5 has-text-white has-text-weight-semibold">&nbsp;&nbsp;&nbsp;COMMON TIME</h1>
