@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const Fourthpart = styled.div`
   width: 1208px;
   height: 524px;
-  margin-left: 137px;
+  margin-left: 87px;
 `;
 
 const Agency = styled.div`
@@ -57,8 +57,8 @@ const RightColFoarm = styled.div`
 `;
 
 const Subscription = styled.div`
-  padding-left: 230px;
-  padding-top: 60px;
+  padding-left: 82px;
+  padding-top: 55px;
   @media screen and (max-width: 800px) {
     {
       padding-top: 2362px;

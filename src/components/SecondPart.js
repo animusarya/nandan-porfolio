@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const  Design  = styled.div`
-  margin-left: 137px !important;
+  margin-left: 137px!important;
   width: 82%;
   height: 644px;
   margin-top: 145px!important;
@@ -73,7 +73,7 @@ const Card = styled.img`
 
 const Beyond = styled.div`
   width: 41%;
-  height: 76px;
+  height: 69px;
   background-color: #1b6e4ecc !important;
   margin-top: -76px;
   position: absolute;
@@ -89,7 +89,7 @@ const Beyond = styled.div`
 `;
 
 const Bix = styled.div`
-  width: 378px;
+  width: 267px!important;
   height: 76px;
   background-color: #1f3db38a!important;
   margin-top: -82px;
@@ -105,7 +105,7 @@ const Bix = styled.div`
 `;
 
 const WebDesign = styled.div`
-  width: 302px;
+  width: 266px!important;
   height: 76px;
   background-color: #474342ad!important
   margin-top: -82px;
